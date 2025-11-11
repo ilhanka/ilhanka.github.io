@@ -6,8 +6,8 @@ import { useCounterAnimation } from '../hooks/useCounterAnimation';
 const Hero: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const [yearsRef, yearsCount] = useCounterAnimation({ endValue: 15, suffix: '+', duration: 2000 });
-  const [surgeriesRef, surgeriesCount] = useCounterAnimation({ endValue: 1000, suffix: '+', duration: 2500 });
+  const [yearsRef, yearsCount] = useCounterAnimation({ endValue: 20, suffix: '+', duration: 2000 });
+  const [surgeriesRef, surgeriesCount] = useCounterAnimation({ endValue: 5000, suffix: '+', duration: 2500 });
   const [satisfactionRef, satisfactionCount] = useCounterAnimation({ endValue: 98, suffix: '%', duration: 2000 });
 
   const scrollToContact = () => {
@@ -69,8 +69,10 @@ const Hero: React.FC = () => {
 
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4 pt-4">
-                <button
-                  onClick={() => setIsModalOpen(true)}
+                <a
+                  href="https://www.medicalpark.com.tr/hekimler/ilhan-karabicak"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="group relative px-8 py-4 bg-white text-slate-900 font-bold text-lg hover:bg-gray-100 transition-all duration-300 flex items-center gap-3 overflow-hidden"
                 >
                   <span className="relative z-10 flex items-center gap-3">
@@ -81,7 +83,7 @@ const Hero: React.FC = () => {
                   <span className="relative z-10 flex items-center gap-3 group-hover:text-white transition-colors">
                     <ArrowRight className="w-5 h-5" />
                   </span>
-                </button>
+                </a>
 
                 <button
                   onClick={scrollToContact}
@@ -126,26 +128,23 @@ const Hero: React.FC = () => {
           </div>
 
           {/* Right Side - Image with Overlay */}
-          <div className="relative hidden lg:block">
-            {/* Diagonal Divider */}
-            <div className="absolute left-0 top-0 w-full h-full bg-gradient-to-br from-slate-900 via-blue-900 to-navy-900 z-10" 
-                 style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 15% 100%)' }}>
-            </div>
+          <div className="relative hidden lg:flex items-center justify-center p-20">
+            {/* Image Container with Frame */}
+            <div className="relative w-full max-w-lg">
+              {/* Decorative Frame Border */}
+              <div className="absolute -inset-4 bg-gradient-to-br from-blue-500/30 to-purple-500/30 blur-xl"></div>
 
-            {/* Image Container */}
-            <div className="absolute inset-0 z-0">
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-900/50 to-slate-900/50 z-10"></div>
-              <img
-                src={`${import.meta.env.BASE_URL}ilhan-karabicak.jpg`}
-                alt="Doç. Dr. İlhan Karabıçak"
-                className="w-full h-full object-cover mix-blend-overlay opacity-60"
-              />
-              
-              {/* Overlay Pattern */}
-              <div className="absolute inset-0 z-20 bg-gradient-to-tr from-transparent via-white/5 to-transparent"></div>
-              
+              {/* Main Image Frame */}
+              <div className="relative border-4 border-white/30 shadow-2xl overflow-hidden">
+                <img
+                  src={`${import.meta.env.BASE_URL}ilhankarabicak_photos/main_photo.jpg`}
+                  alt="Doç. Dr. İlhan Karabıçak"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+
               {/* Floating Info Card */}
-              <div className="absolute bottom-20 right-20 z-30 bg-white/10 backdrop-blur-md p-6 border border-white/20 max-w-xs">
+              <div className="absolute -bottom-8 -right-8 z-30 bg-white/10 backdrop-blur-md p-6 border border-white/20">
                 <div className="text-white space-y-3">
                   <div className="text-2xl font-black">Medical Park</div>
                   <div className="text-sm text-gray-300">Samsun Hastanesi</div>
@@ -157,14 +156,6 @@ const Hero: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
-
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 hidden lg:block">
-        <div className="flex flex-col items-center gap-2 text-white/60 animate-bounce">
-          <span className="text-xs uppercase tracking-widest font-medium">Scroll</span>
-          <div className="w-px h-12 bg-gradient-to-b from-white/60 to-transparent"></div>
         </div>
       </div>
 

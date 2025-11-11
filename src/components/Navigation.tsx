@@ -109,13 +109,15 @@ const Navigation: React.FC = () => {
               <Phone className="w-5 h-5" />
             </button>
             
-            <button
-              onClick={() => setIsModalOpen(true)}
+            <a
+              href="https://www.medicalpark.com.tr/hekimler/ilhan-karabicak"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white text-slate-900 px-6 py-2 font-bold text-sm hover:bg-gray-100 transition-all duration-300 flex items-center gap-2"
             >
               <Calendar className="w-4 h-4" />
               <span>Randevu</span>
-            </button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -157,13 +159,15 @@ const Navigation: React.FC = () => {
                 Ara
               </button>
 
-              <button
-                onClick={() => setIsModalOpen(true)}
+              <a
+                href="https://www.medicalpark.com.tr/hekimler/ilhan-karabicak"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex-1 bg-white text-slate-900 flex items-center justify-center gap-2 py-3 font-bold text-sm hover:bg-gray-100 transition-all duration-300"
               >
                 <Calendar className="w-4 h-4" />
                 Randevu
-              </button>
+              </a>
             </div>
           </div>
         </div>

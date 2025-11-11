@@ -149,6 +149,66 @@ const Specialties: React.FC = () => {
         "Düşük ağrı düzeyi"
       ],
       image: `${import.meta.env.BASE_URL}gallery/1.jpeg`
+    },
+    {
+      icon: <Activity className="w-8 h-8" />,
+      title: "Mide Cerrahisi",
+      description: "Mide hastalıklarının cerrahi tedavisinde modern teknikler ve hasta odaklı yaklaşım ile en iyi sonuçları hedefliyorum.",
+      features: [
+        "Laparoskopik mide ameliyatları",
+        "Minimal invaziv teknikler",
+        "Kısa hastane kalış süresi",
+        "Deneyimli ekip ile güvenli operasyonlar"
+      ],
+      image: `${import.meta.env.BASE_URL}ilhankarabicak_photos/mide_cerrahasi.jpg`
+    },
+    {
+      icon: <Shield className="w-8 h-8" />,
+      title: "Kalın Bağırsak ve Rektum Cerrahisi",
+      description: "Kolorektal cerrahide en ileri tekniklerle tedavi sunuyor, hastalarımın yaşam kalitesini önceliklendiriyorum.",
+      features: [
+        "Laparoskopik kolon cerrahisi",
+        "Minimal invaziv rektum operasyonları",
+        "Onkolojik güvenli rezeksiyonlar",
+        "Multidisipliner tedavi yaklaşımı"
+      ],
+      image: `${import.meta.env.BASE_URL}ilhankarabicak_photos/kalin_bagirsak_ve_rektum_cerrahisi.jpg`
+    },
+    {
+      icon: <Zap className="w-8 h-8" />,
+      title: "Meme Cerrahisi",
+      description: "Meme sağlığı ve estetik sonuçların birlikte değerlendirildiği hassas ve kişiselleştirilmiş cerrahi yaklaşım.",
+      features: [
+        "Meme koruyucu cerrahi",
+        "Onkoplastik teknikler",
+        "Sentinel lenf nodu biyopsisi",
+        "Estetik odaklı yaklaşım"
+      ],
+      image: `${import.meta.env.BASE_URL}ilhankarabicak_photos/meme_cerrhaisi.jpg`
+    },
+    {
+      icon: <Activity className="w-8 h-8" />,
+      title: "Sıcak Kemoterapi",
+      description: "HIPEC (Hipertermik İntraperitoneal Kemoterapi) ile peritoneal karsinomatozis tedavisinde ileri tedavi seçeneği sunuyorum.",
+      features: [
+        "İntraperitoneal kemoterapi uygulaması",
+        "Peritoneal yüzey malignitelerinde etkili tedavi",
+        "Multimodal tedavi yaklaşımı",
+        "Deneyimli ekip ile güvenli uygulama"
+      ],
+      image: `${import.meta.env.BASE_URL}ilhankarabicak_photos/sicak_kemoterapi.jpg`
+    },
+    {
+      icon: <Shield className="w-8 h-8" />,
+      title: "İleri Laparoskopik Kanser Cerrahisi",
+      description: "Karmaşık kanser vakalarında minimal invaziv tekniklerle tedavi, hastalarımın daha hızlı iyileşmesini sağlıyorum.",
+      features: [
+        "Gelişmiş laparoskopik onkolojik cerrahi",
+        "Minimal invaziv radikal operasyonlar",
+        "Hızlı iyileşme ve erken mobilizasyon",
+        "Onkolojik güvenlik ile kozmetik sonuç"
+      ],
+      image: `${import.meta.env.BASE_URL}ilhankarabicak_photos/ileri_lopotpskopik_kanser_cerrahisi.jpg`
     }
   ];
 

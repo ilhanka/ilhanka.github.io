@@ -75,21 +75,21 @@ const Contact: React.FC = () => {
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Randevu Hattı",
-      info: "+90 362 444 55 66",
+      info: "444 44 84",
       detail: "7/24 Erişilebilir",
       action: "Hemen Ara"
     },
     {
       icon: <MessageCircle className="w-6 h-6" />,
       title: "WhatsApp İletişim",
-      info: "+90 555 123 45 67",
+      info: "+90 533 241 68 95",
       detail: "Hızlı Yanıt",
       action: "WhatsApp'ta Yaz"
     },
     {
       icon: <Mail className="w-6 h-6" />,
       title: "E-posta Desteği",
-      info: "dr.ilhan@medicalpark.com.tr",
+      info: "ikarabicak@yahoo.com",
       detail: "24 saat içinde yanıt",
       action: "E-posta Gönder"
     }
@@ -210,11 +210,6 @@ const Contact: React.FC = () => {
                     <div className="flex justify-between pb-2">
                       <span className="text-white/90">Pazar</span>
                       <span className="text-white/70">Kapalı</span>
-                    </div>
-                    <div className="pt-4 border-t border-white/20">
-                      <span className="text-white/80 text-sm uppercase tracking-wider">
-                        * Acil durumlar için 7/24 ulaşılabilir
-                      </span>
                     </div>
                   </div>
                 </div>

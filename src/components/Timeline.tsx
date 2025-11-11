@@ -225,7 +225,7 @@ const Timeline: React.FC = () => {
             </div>
 
             <div className="bg-gradient-to-br from-navy-800 to-navy-600 p-10 text-white text-center">
-              <div className="text-5xl font-black mb-4">5</div>
+              <div className="text-5xl font-black mb-4">3</div>
               <div className="text-white/90 font-bold uppercase tracking-wider text-sm mb-2">Ülke</div>
               <div className="text-white/70 text-sm">Uluslararası Deneyim</div>
             </div>

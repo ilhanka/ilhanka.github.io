@@ -153,13 +153,13 @@ const Publications: React.FC = () => {
           <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-navy-900 to-navy-700 p-10 text-white text-center flex flex-col items-center justify-center">
               <BookOpen className="w-12 h-12 mx-auto mb-6 text-blue-300" />
-              <div className="text-5xl font-black mb-4">50+</div>
+              <div className="text-5xl font-black mb-4">45+</div>
               <div className="text-white/90 font-bold uppercase tracking-wider text-sm mb-2">Bilimsel Makale</div>
               <div className="text-white/70 text-sm">Uluslararası Dergilerde</div>
             </div>
 
             <div className="bg-gradient-to-br from-navy-800 to-navy-600 p-10 text-white text-center flex flex-col items-center justify-center">
-              <div className="text-5xl font-black mb-4">100+</div>
+              <div className="text-5xl font-black mb-4">1000+</div>
               <div className="text-white/90 font-bold uppercase tracking-wider text-sm mb-2">Atıf Sayısı</div>
               <div className="text-white/70 text-sm">Bilimsel Etki</div>
             </div>

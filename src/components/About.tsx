@@ -7,7 +7,7 @@ const About: React.FC = () => {
   const [aboutRef, aboutVisible] = useScrollAnimation();
   const [statsRef, statsVisible] = useScrollAnimation();
 
-  const [experienceRef, experienceCount] = useCounterAnimation({ endValue: 15, suffix: '+', duration: 2000 });
+  const [experienceRef, experienceCount] = useCounterAnimation({ endValue: 20, suffix: '+', duration: 2000 });
   const [patientsRef, patientsCount] = useCounterAnimation({ endValue: 5000, suffix: '+', duration: 2500 });
   const [satisfactionRef, satisfactionCount] = useCounterAnimation({ endValue: 98, suffix: '%', duration: 2000 });
 
@@ -99,25 +99,67 @@ const About: React.FC = () => {
           <div className="grid lg:grid-cols-3 gap-8 mb-20">
             {/* Main Content */}
             <div className="lg:col-span-2 space-y-8">
-              <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
-                <p className="text-xl leading-relaxed">
-                  <span className="font-black text-slate-900">İstanbul Üniversitesi Tıp Fakültesi</span> eğitimimin ardından,
-                  Memorial Sloan Kettering Cancer Center ve New York Üniversitesi gibi 
-                  prestijli uluslararası kurumlarda edindiğim deneyimler, mesleki gelişimimde önemli rol oynamıştır.
+              <div className="space-y-6 text-base text-gray-700 leading-relaxed">
+                <p className="leading-relaxed">
+                  6 Temmuz 1974 tarihinde Giresun'da doğdum. İlkokulu Yeşil Giresun İlkokulu, ortaokul ve liseyi Giresun Hamdi Bozbağ Anadolu Lisesi'nde okudum.
                 </p>
-                
+
+                <p className="leading-relaxed">
+                  Tıp Fakültesini <span className="font-bold text-slate-900">İstanbul Üniversitesi İstanbul Tıp Fakültesi'nde</span> (1992 – 1998) okudum. Genel cerrahi asistanlık eğitimini <span className="font-bold text-slate-900">İstanbul Üniversitesi Cerrahpaşa Tıp Fakültesi'nde</span> aldım (1999 – 2004).
+                </p>
+
+                <p className="leading-relaxed">
+                  Aralık 2004 - Temmuz 2007 yılları arasında <span className="font-bold text-slate-900">New York Üniversitesi Mount Sinai Hastanesinde</span> karaciğer-böbrek nakli ve karaciğer–pankreas-safra yolları cerrahisi merkezinde çalıştım.
+                </p>
+
+                <p className="leading-relaxed">
+                  2007 yılında Amerika Birleşik Devletleri Tıpta uzmanlık sınavlarını (USMLE) geçtim ve ECFMG belgesini aldım.
+                </p>
+
+                <p className="leading-relaxed">
+                  Eylül 2007 - Nisan 2008 tarihleri arasında Özel İstanbul Merter Dr. Ahmet Ermiş ve Hizmet hastanesinde çalıştım.
+                </p>
+
+                <p className="leading-relaxed">
+                  Nisan 2008 tarihinde <span className="font-bold text-slate-900">Ondokuz Mayıs Üniversitesi Tıp Fakültesi Genel Cerrahi Anabilim Dalı'nda</span> yardımcı doçent olarak çalışmaya başladım.
+                </p>
+
+                <p className="leading-relaxed">
+                  Ekim 2008- Ekim 2010 tarihleri arasında New York Üniversitesi Tıp Fakültesinde karaciğer nakli ve karaciğer–pankreas safra yolları cerrahisi bölümünde yan dal eğitimi, State University of New York Downstate Medical School'da böbrek nakli yan dal eğitimi aldım.
+                </p>
+
+                <p className="leading-relaxed">
+                  Ağustos 2010 tarihinde <span className="font-bold text-slate-900">New York Sloan Kettering Memorial Hospital'da</span> karaciğer-pankreas ve kanser cerrahisi ünitesinde 2 hafta gözlemci doktor olarak bulundum.
+                </p>
+
+                <p className="leading-relaxed">
+                  Eylül 2012 tarihinde <span className="font-bold text-slate-900">Genel Cerrahi doçenti</span> oldum. 22 Kasım 2012 tarihinde Avrupa Genel Cerrahi bordu sınavını geçerek <span className="font-bold text-slate-900">FEBS ünvanını</span> aldım.
+                </p>
+
+                <p className="leading-relaxed">
+                  1 Mayıs- 30 Haziran 2016 tarihlerinde <span className="font-bold text-slate-900">Japonya Kansai Medical Universitesi</span> karaciğer-pankreas cerrahisi bölümünde gözlemci doktor olarak çalıştım.
+                </p>
+
+                <p className="leading-relaxed">
+                  Ondokuz Mayıs Üniversitesi (OMÜ) Tıp Fakültesi'nde karaciğer nakli merkezini 2012 yılında kurdum. <span className="text-navy-600 font-bold">Orta ve Batı Karadeniz Bölgesinde ilk karaciğer naklini yaptım.</span>
+                </p>
+
                 <div className="h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
 
                 <p className="leading-relaxed">
-                  Her hasta için en uygun tedavi yöntemini belirlerken, 
-                  <span className="font-bold text-slate-900"> kanıta dayalı tıp</span> prensiplerini 
-                  ve <span className="font-bold text-slate-900">modern cerrahi teknikleri</span> ön planda tutmaktayım.
+                  Teknolojik gelişmeleri çok yakından takip ediyorum. <span className="text-navy-600 font-bold">Laparoskopik karaciğer, pankreas, fıtık ve barsak cerrahisi konusunda birçok ilklere imza attım.</span> Yaptığım ameliyatları anlatmak üzere uluslararası birçok kongrelerde konuşma yapmak üzere davet edildim.
                 </p>
 
                 <p className="leading-relaxed">
-                  Ameliyat öncesi değerlendirmeden, operasyon sürecine ve postoperatif takibe kadar 
-                  tüm aşamalarda <span className="text-navy-600 font-bold">hasta güvenliği</span> ve 
-                  <span className="text-navy-600 font-bold">yaşam kalitesi</span> odaklı bir yaklaşım benimsemekteyim.
+                  Dünyada kist hidatik hastalığında (köpek kisti) tek port laparoskopik cerrahiyi (SILS) ilk ben uyguladım ve ilk vaka olarak uluslararası tıbbi dergilerde yayınladım.
+                </p>
+
+                <p className="leading-relaxed">
+                  SILS karaciğer ve pankreas cerrahisi konusunda Türkiye'deki en büyük, Avrupa'da da önde gelen bir seriye sahibim.
+                </p>
+
+                <p className="leading-relaxed">
+                  Mart 2017 tarihinden beri <span className="font-bold text-slate-900">Samsun VM Medikalpark hastanesinde</span> çalışıyorum.
                 </p>
               </div>
 
@@ -146,6 +188,7 @@ const About: React.FC = () => {
                 <div className="text-2xl font-black text-slate-900 mb-2">Uluslararası</div>
                 <div className="text-sm text-gray-600">Memorial Sloan Kettering</div>
                 <div className="text-sm text-gray-600">New York Üniversitesi</div>
+                <div className="text-sm text-gray-600">Kansai Tıp Fakültesi, Osaka, JAPONYA</div>
               </div>
               
               <div className="bg-white p-8 border-2 border-slate-200 hover:border-navy-600 transition-all duration-300 group">
@@ -153,8 +196,8 @@ const About: React.FC = () => {
                   <BookOpen className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-2xl font-black text-slate-900 mb-2">Bilimsel</div>
-                <div className="text-sm text-gray-600">50+ Uluslararası Makale</div>
-                <div className="text-sm text-gray-600">100+ Atıf</div>
+                <div className="text-sm text-gray-600">45+ Uluslararası Makale</div>
+                <div className="text-sm text-gray-600">1000+ Atıf</div>
               </div>
 
               <div className="bg-white p-8 border-2 border-slate-200 hover:border-navy-600 transition-all duration-300 group">
@@ -162,7 +205,7 @@ const About: React.FC = () => {
                   <Award className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-2xl font-black text-slate-900 mb-2">Başarı</div>
-                <div className="text-sm text-gray-600">FEBS Ünvanı</div>
+                <div className="text-sm text-gray-600">Avrupa Genel Cerrah Board Sertifikası (FEBS)</div>
                 <div className="text-sm text-gray-600">Doçent Doktor</div>
               </div>
             </div>
