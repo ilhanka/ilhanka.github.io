@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { BookOpen, ExternalLink, ChevronDown, ChevronUp, Calendar } from 'lucide-react';
+import React from 'react';
+import { BookOpen, ExternalLink, ChevronDown, Calendar } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
 
 interface Publication {
@@ -12,7 +12,6 @@ interface Publication {
 
 const Publications: React.FC = () => {
   const [headerRef, headerVisible] = useScrollAnimation();
-  const [showAll, setShowAll] = useState(false);
 
   const publications: Publication[] = [
     {
@@ -87,7 +86,7 @@ const Publications: React.FC = () => {
     }
   ];
 
-  const displayedPublications = showAll ? publications : publications.slice(0, 6);
+  const displayedPublications = publications.slice(0, 6);
 
   return (
     <section className="py-32 bg-white" id="publications">
@@ -130,22 +129,15 @@ const Publications: React.FC = () => {
           {/* Show More/Less Button */}
           {publications.length > 6 && (
             <div className="text-center">
-              <button
-                onClick={() => setShowAll(!showAll)}
+              <a
+                href="https://pubmed.ncbi.nlm.nih.gov/?term=karabicak+i"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-slate-900 text-white px-10 py-4 font-black text-base hover:bg-navy-600 transition-all duration-300"
               >
-                {showAll ? (
-                  <>
-                    <ChevronUp className="w-5 h-5" />
-                    Daha Az Göster
-                  </>
-                ) : (
-                  <>
-                    <ChevronDown className="w-5 h-5" />
-                    Tüm Yayınları Göster ({publications.length})
-                  </>
-                )}
-              </button>
+                <ChevronDown className="w-5 h-5" />
+                Tüm Yayınları Göster
+              </a>
             </div>
           )}
 

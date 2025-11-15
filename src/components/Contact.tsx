@@ -67,8 +67,8 @@ const Contact: React.FC = () => {
     {
       icon: <MapPin className="w-6 h-6" />,
       title: "Medical Park Samsun Hastanesi",
-      info: "Kılıçdede Mah. Liman Cad. No:1",
-      detail: "İlkadım/Samsun",
+      info: "Mimar Sinan Mahallesi Alpaslan Bulvarı No:17",
+      detail: "Atakum / Samsun",
       action: "Haritada Görüntüle",
       link: "https://www.google.com/maps/place/VM+Medical+Park+Samsun+Hastanesi/@41.3334995,36.2693414,17z/data=!3m1!4b1!4m6!3m5!1s0x4088790160da9ec9:0x746ff584f05eda61!8m2!3d41.3334955!4d36.2719163!16s%2Fg%2F11c5_r51m_?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D"
     },
@@ -305,7 +305,7 @@ const Contact: React.FC = () => {
                 <div className="text-center z-10">
                   <MapPin className="w-16 h-16 mx-auto mb-6 text-navy-600" />
                   <p className="text-2xl font-black text-slate-900 mb-2">Medical Park Samsun Hastanesi</p>
-                  <p className="text-base text-gray-600 mb-6">Kılıçdede Mah. Liman Cad. No:1, İlkadım/Samsun</p>
+                  <p className="text-base text-gray-600 mb-6">Mimar Sinan Mahallesi Alpaslan Bulvarı No:17, Atakum / Samsun</p>
                   <a
                     href="https://www.google.com/maps/place/VM+Medical+Park+Samsun+Hastanesi/@41.3334995,36.2693414,17z/data=!3m1!4b1!4m6!3m5!1s0x4088790160da9ec9:0x746ff584f05eda61!8m2!3d41.3334955!4d36.2719163!16s%2Fg%2F11c5_r51m_?entry=ttu&g_ep=EgoyMDI1MTEwNC4xIKXMDSoASAFQAw%3D%3D"
                     target="_blank"

@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { ArrowRight, Calendar, Phone, Play } from 'lucide-react';
-import AppointmentModal from './AppointmentModal';
+import React from 'react';
+import { ArrowRight, Calendar, Phone } from 'lucide-react';
 import { useCounterAnimation } from '../hooks/useCounterAnimation';
 
 const Hero: React.FC = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const [yearsRef, yearsCount] = useCounterAnimation({ endValue: 20, suffix: '+', duration: 2000 });
   const [surgeriesRef, surgeriesCount] = useCounterAnimation({ endValue: 5000, suffix: '+', duration: 2500 });
@@ -63,7 +61,7 @@ const Hero: React.FC = () => {
 
               {/* Description */}
               <p className="text-xl lg:text-2xl text-gray-200 leading-relaxed font-light max-w-xl">
-                15 yılı aşkın deneyimle, modern tıbbi uygulamalar ve bilimsel yaklaşım doğrultusunda 
+                20 yılı aşkın deneyimle, modern tıbbi uygulamalar ve bilimsel yaklaşım doğrultusunda 
                 hastalarıma en iyi sağlık hizmetini sunmaktayım.
               </p>
 
@@ -137,7 +135,7 @@ const Hero: React.FC = () => {
               {/* Main Image Frame */}
               <div className="relative border-4 border-white/30 shadow-2xl overflow-hidden">
                 <img
-                  src={`${import.meta.env.BASE_URL}ilhankarabicak_photos/main_photo.jpg`}
+                  src="/ilhankarabicak_photos/main_photo.jpg"
                   alt="Doç. Dr. İlhan Karabıçak"
                   className="w-full h-auto object-cover"
                 />
@@ -159,8 +157,6 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Appointment Modal */}
-      <AppointmentModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </section>
   );
 };

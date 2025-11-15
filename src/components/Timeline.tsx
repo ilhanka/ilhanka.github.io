@@ -175,7 +175,7 @@ const Timeline: React.FC = () => {
               Akademik<br />Yolculuğum
             </h2>
             <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
-              30 yılı aşkın eğitim ve deneyim sürecinde edindiğim bilgi birikimi ve uluslararası
+              20 yılı aşkın eğitim ve deneyim sürecinde edindiğim bilgi birikimi ve uluslararası
               tecrübelerim ile hastalarıma en iyi hizmeti sunmaktayım.
             </p>
           </div>
@@ -219,7 +219,7 @@ const Timeline: React.FC = () => {
           {/* Bottom Highlights */}
           <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-navy-900 to-navy-700 p-10 text-white text-center">
-              <div className="text-5xl font-black mb-4">30+</div>
+              <div className="text-5xl font-black mb-4">20+</div>
               <div className="text-white/90 font-bold uppercase tracking-wider text-sm mb-2">Yıllık Deneyim</div>
               <div className="text-white/70 text-sm">Eğitim ve Mesleki Gelişim</div>
             </div>
@@ -233,7 +233,8 @@ const Timeline: React.FC = () => {
             <div className="bg-gradient-to-br from-blue-900 to-navy-800 p-10 text-white text-center">
               <div className="text-5xl font-black mb-4">İlk</div>
               <div className="text-white/90 font-bold uppercase tracking-wider text-sm mb-2">Başarı</div>
-              <div className="text-white/70 text-sm">Orta Karadeniz Karaciğer Nakli</div>
+              <div className="text-white/70 text-sm">Köpek Kisti Hastalığında Tek Port (SILS) Cerrahi</div>
+              <div className="text-white/70 text-sm mt-2">Orta ve Batı Karadeniz İlk Karaciğer Nakli</div>
             </div>
           </div>
         </div>

@@ -61,10 +61,6 @@ const SpecialtyCard: React.FC<SpecialtyCardProps> = ({
                 {title}
               </h3>
 
-              <p className="text-lg text-gray-700 leading-relaxed max-w-xl">
-                {description}
-              </p>
-
               {/* Features */}
               <div className="space-y-4 pt-4">
                 {features.map((feature, idx) => (
@@ -117,98 +113,103 @@ const Specialties: React.FC = () => {
     {
       icon: <Activity className="w-8 h-8" />,
       title: "Pankreas Cerrahisi",
-      description: "Zorlu ameliyatlarda en güncel yöntemlerle çözüm sunmaktayım. Minimal invaziv tekniklerle hasta konforunu önceliklendirmekteyim.",
+      description: "",
       features: [
-        "Minimal invaziv laparoskopik yöntemler",
-        "Hızlı iyileşme süreci",
-        "Düşük komplikasyon oranı",
-        "24/7 takip sistemi"
+        "Pankreas kanseri",
+        "Pankreas iyi huylu tümörleri",
+        "Pankreas kistleri",
+        "Pankreatit"
       ],
-      image: `${import.meta.env.BASE_URL}gallery/11fad331-e36b-46a4-8ae6-d7ae5044b7a0.jpeg`
+      image: "/gallery/11fad331-e36b-46a4-8ae6-d7ae5044b7a0.jpeg"
     },
     {
       icon: <Shield className="w-8 h-8" />,
       title: "Karaciğer Cerrahisi",
-      description: "Hassasiyet gerektiren karaciğer operasyonlarında yüksek başarı oranı. Kompleks vakalarda güvenli çözümler sunmaktayım.",
+      description: "",
       features: [
-        "İleri görüntüleme teknikleri",
-        "Multidisipliner yaklaşım",
-        "Yüksek başarı oranı",
-        "Kişiselleştirilmiş tedavi planı"
+        "Karaciğer kanseri",
+        "İyi huylu karaciğer tümörleri",
+        "Hemanjiom",
+        "Köpek kisti (kist hidatik)"
       ],
-      image: `${import.meta.env.BASE_URL}gallery/463b1c90-43a4-4eab-a41e-4a5c98cedeb6.jpeg`
+      image: "/gallery/463b1c90-43a4-4eab-a41e-4a5c98cedeb6.jpeg"
     },
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Safra Yolları",
-      description: "Minimal invaziv yöntemlerle daha konforlu bir iyileşme süreci. Hastalarımın günlük yaşamlarına en kısa sürede dönmelerini hedeflemekteyim.",
+      description: "",
       features: [
-        "Günübirlik cerrahi imkanı",
-        "Minimal skar izi",
-        "Hızlı mobilizasyon",
-        "Düşük ağrı düzeyi"
+        "Safra kesesi taşı",
+        "Safra yolları cerrahisi",
+        "Safra yolları kanseri",
+        "Safra kesesi kanseri",
+        "Kolesistit"
       ],
-      image: `${import.meta.env.BASE_URL}gallery/1.jpeg`
+      image: "/gallery/1.jpeg"
     },
     {
       icon: <Activity className="w-8 h-8" />,
       title: "Mide Cerrahisi",
-      description: "Mide hastalıklarının cerrahi tedavisinde modern teknikler ve hasta odaklı yaklaşım ile en iyi sonuçları hedefliyorum.",
+      description: "",
       features: [
-        "Laparoskopik mide ameliyatları",
-        "Minimal invaziv teknikler",
-        "Kısa hastane kalış süresi",
-        "Deneyimli ekip ile güvenli operasyonlar"
+        "Mide kanseri",
+        "İyi huylu mide tümörleri",
+        "Mide fıtığı",
+        "Hiatal herni",
+        "Reflü cerrahisi"
       ],
-      image: `${import.meta.env.BASE_URL}ilhankarabicak_photos/mide_cerrahasi.jpg`
+      image: "/ilhankarabicak_photos/mide_cerrahasi.jpg"
     },
     {
       icon: <Shield className="w-8 h-8" />,
       title: "Kalın Bağırsak ve Rektum Cerrahisi",
-      description: "Kolorektal cerrahide en ileri tekniklerle tedavi sunuyor, hastalarımın yaşam kalitesini önceliklendiriyorum.",
+      description: "",
       features: [
-        "Laparoskopik kolon cerrahisi",
-        "Minimal invaziv rektum operasyonları",
-        "Onkolojik güvenli rezeksiyonlar",
-        "Multidisipliner tedavi yaklaşımı"
+        "Kalın bağırsak kanseri",
+        "Rektum kanseri",
+        "Kalın bağırsağın iyi huylu tümörleri",
+        "Divertikülit",
+        "Anal fissür (makat çatlağı)",
+        "Hemoroid (Basur)"
       ],
-      image: `${import.meta.env.BASE_URL}ilhankarabicak_photos/kalin_bagirsak_ve_rektum_cerrahisi.jpg`
+      image: "/ilhankarabicak_photos/kalin_bagirsak_ve_rektum_cerrahisi.jpg"
     },
     {
       icon: <Zap className="w-8 h-8" />,
       title: "Meme Cerrahisi",
-      description: "Meme sağlığı ve estetik sonuçların birlikte değerlendirildiği hassas ve kişiselleştirilmiş cerrahi yaklaşım.",
+      description: "",
       features: [
-        "Meme koruyucu cerrahi",
-        "Onkoplastik teknikler",
-        "Sentinel lenf nodu biyopsisi",
-        "Estetik odaklı yaklaşım"
+        "Meme kanseri",
+        "Onkoplastik cerrahi",
+        "Meme'nin iyi huylu tümörleri"
       ],
-      image: `${import.meta.env.BASE_URL}ilhankarabicak_photos/meme_cerrhaisi.jpg`
+      image: "/ilhankarabicak_photos/meme_cerrhaisi.jpg"
     },
     {
       icon: <Activity className="w-8 h-8" />,
       title: "Sıcak Kemoterapi",
-      description: "HIPEC (Hipertermik İntraperitoneal Kemoterapi) ile peritoneal karsinomatozis tedavisinde ileri tedavi seçeneği sunuyorum.",
+      description: "",
       features: [
-        "İntraperitoneal kemoterapi uygulaması",
-        "Peritoneal yüzey malignitelerinde etkili tedavi",
-        "Multimodal tedavi yaklaşımı",
-        "Deneyimli ekip ile güvenli uygulama"
+        "Periton kanseri",
+        "Yumurtalık kanseri",
+        "Apandiks kanseri",
+        "İntraperitoneal kemoterapi uygulaması"
       ],
-      image: `${import.meta.env.BASE_URL}ilhankarabicak_photos/sicak_kemoterapi.jpg`
+      image: "/ilhankarabicak_photos/sicak_kemoterapi.jpg"
     },
     {
       icon: <Shield className="w-8 h-8" />,
       title: "İleri Laparoskopik Kanser Cerrahisi",
-      description: "Karmaşık kanser vakalarında minimal invaziv tekniklerle tedavi, hastalarımın daha hızlı iyileşmesini sağlıyorum.",
+      description: "",
       features: [
-        "Gelişmiş laparoskopik onkolojik cerrahi",
-        "Minimal invaziv radikal operasyonlar",
-        "Hızlı iyileşme ve erken mobilizasyon",
-        "Onkolojik güvenlik ile kozmetik sonuç"
+        "Mide kanseri",
+        "Pankreas kanseri",
+        "Karaciğer kanseri",
+        "Kalın bağırsak kanseri",
+        "Rektum kanseri",
+        "İnce bağırsak kanseri"
       ],
-      image: `${import.meta.env.BASE_URL}ilhankarabicak_photos/ileri_lopotpskopik_kanser_cerrahisi.jpg`
+      image: "/ilhankarabicak_photos/ileri_lopotpskopik_kanser_cerrahisi.jpg"
     }
   ];
 
@@ -230,10 +231,6 @@ const Specialties: React.FC = () => {
           <h2 className="text-5xl lg:text-7xl font-black text-slate-900 mb-6 leading-tight">
             Cerrahi<br />Uzmanlıklarım
           </h2>
-          <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
-            Her alanda en güncel teknikleri kullanarak, hastalarımın en iyi tedaviyi 
-            almasını sağlamaktayım. Deneyim ve teknolojinin birleşimi.
-          </p>
         </div>
       </div>
 

@@ -116,3 +116,4 @@ Bu proje özel bir projedir.
 - Medical Park Samsun Hastanesi
 - Kılıçdede Mah. Liman Cad. No:1, İlkadım/Samsun
 - Tel: +90 362 444 55 66
+# ilhankarabicak.websayfasi

@@ -35,7 +35,7 @@ const About: React.FC = () => {
               </div>
               <div className="lg:col-span-4">
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  30 yılı aşkın eğitim ve deneyim sürecinde, uluslararası standartlarda 
+                  20 yılı aşkın eğitim ve deneyim sürecinde, uluslararası standartlarda 
                   sağlık hizmeti sunmak için sürekli kendimi geliştirmekteyim.
                 </p>
               </div>
@@ -48,7 +48,7 @@ const About: React.FC = () => {
             <div className="lg:col-span-8 relative group">
               <div className="aspect-[4/3] overflow-hidden bg-slate-200">
                 <img
-                  src={`${import.meta.env.BASE_URL}ilhan-karabicak.jpg`}
+                  src="/ilhan-karabicak.jpg"
                   alt="Dr. İlhan Karabıçak"
                   className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                 />
@@ -65,7 +65,7 @@ const About: React.FC = () => {
               <div className="relative group">
                 <div className="aspect-square overflow-hidden bg-slate-200">
                   <img
-                    src={`${import.meta.env.BASE_URL}gallery/11fad331-e36b-46a4-8ae6-d7ae5044b7a0.jpeg`}
+                    src="/gallery/11fad331-e36b-46a4-8ae6-d7ae5044b7a0.jpeg"
                     alt="Medical"
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                   />
@@ -75,7 +75,7 @@ const About: React.FC = () => {
               <div className="relative group">
                 <div className="aspect-square overflow-hidden bg-slate-200">
                   <img
-                    src={`${import.meta.env.BASE_URL}gallery/463b1c90-43a4-4eab-a41e-4a5c98cedeb6.jpeg`}
+                    src="/gallery/463b1c90-43a4-4eab-a41e-4a5c98cedeb6.jpeg"
                     alt="Medical"
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                   />
@@ -85,7 +85,7 @@ const About: React.FC = () => {
               <div className="relative group col-span-2">
                 <div className="aspect-[2/1] overflow-hidden bg-slate-200">
                   <img
-                    src={`${import.meta.env.BASE_URL}gallery/1.jpeg`}
+                    src="/ilhankarabicak_photos/2.jpeg"
                     alt="Medical"
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                   />
@@ -186,8 +186,9 @@ const About: React.FC = () => {
                   <Globe className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-2xl font-black text-slate-900 mb-2">Uluslararası</div>
-                <div className="text-sm text-gray-600">Memorial Sloan Kettering</div>
-                <div className="text-sm text-gray-600">New York Üniversitesi</div>
+                <div className="text-sm text-gray-600">New York Üniversitesi, ABD</div>
+                <div className="text-sm text-gray-600">State University of New York, ABD</div>
+                <div className="text-sm text-gray-600">Memorial Sloan Kettering Kanser Merkezi, ABD</div>
                 <div className="text-sm text-gray-600">Kansai Tıp Fakültesi, Osaka, JAPONYA</div>
               </div>
               
@@ -206,7 +207,6 @@ const About: React.FC = () => {
                 </div>
                 <div className="text-2xl font-black text-slate-900 mb-2">Başarı</div>
                 <div className="text-sm text-gray-600">Avrupa Genel Cerrah Board Sertifikası (FEBS)</div>
-                <div className="text-sm text-gray-600">Doçent Doktor</div>
               </div>
             </div>
           </div>
