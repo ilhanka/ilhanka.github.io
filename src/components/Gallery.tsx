@@ -55,6 +55,12 @@ const Gallery: React.FC = () => {
       src: `${import.meta.env.BASE_URL}gallery/fead025f-197a-48f9-ba37-66243937f703.jpeg`,
       alt: 'Doç. Dr. İlhan Karabıçak',
       orientation: 'portrait'
+    },
+    {
+      id: '8',
+      src: `${import.meta.env.BASE_URL}gallery/4.png`,
+      alt: 'Doç. Dr. İlhan Karabıçak',
+      orientation: 'portrait'
     }
   ];
 
