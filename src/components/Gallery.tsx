@@ -60,7 +60,7 @@ const Gallery: React.FC = () => {
       id: '8',
       src: `${import.meta.env.BASE_URL}gallery/4.png`,
       alt: 'Doç. Dr. İlhan Karabıçak',
-      orientation: 'portrait'
+      orientation: 'landscape'
     }
   ];
 
