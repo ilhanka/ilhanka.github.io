@@ -7,5 +7,3 @@ Yurt dışı deneyimlerim:
     Institute, New York, New York, USA (11/2004 - 6/2005)
   4- Memorial Sloan Kettering Cancer Center, Hepatopancreaticobilier Surgery, NY, NY, USA
   5- Kansai Medical University, Osaka, Japonya (5-7/2016)
-
-bır
