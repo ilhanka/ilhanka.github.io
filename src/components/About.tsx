@@ -85,7 +85,7 @@ const About: React.FC = () => {
               <div className="relative group col-span-2">
                 <div className="aspect-[2/1] overflow-hidden bg-slate-200">
                   <img
-                    src="/ilhankarabicak_photos/4.jpg
+                    src="/ilhankarabicak_photos/4.jpg"
                     alt="Medical"
                     className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
                   />
